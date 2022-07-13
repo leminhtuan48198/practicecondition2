@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thue thu nhap ca nhan</title>
+</head>
+<body>
+<script>
+let tn=+prompt('Nhap thu nhap 1 thang(trieu dong)')
+let tntt
+if (tn>=11){
+    tntt=tn-11
+} else {tntt=0}
+let t
+if (tntt<=5) {
+    t=0.05*tntt
+}else if (tntt<=10){
+    t=0.1*tntt-0.25
+}else if (tntt<=18) {
+    t=0.15*tntt-0.75
+}else {
+    t=0.2*tntt-1.65
+}
+alert("thue thu nhap ca nhan la "+t+" trieu dong/thang"  )
+</script></body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tinh tien dien</title>
+</head>
+<body>
+<script>
+    let num=+prompt('Nhap so dien da dung')
+    let t
+    if (num<=50) {
+        t=num*1000
+    } else if (num<=100) {
+        t=50*1000+ (num-50)*2000
+    } else if (num<=200) {
+        t= 50*1000 +50*2000+(num-100)*3000
+    } else {
+        t=50*1000+50*2000+ 100*3000 +(num-200)*4000
+    }
+    alert('tong tien dien la '+t)
+</script>
+</body>
+</html>
